@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+	background-color: #1b1b1b;
+	color: #fff;
+	font-family: "Atkinson Hyperlegible Next", Arial, Helvetica, sans-serif;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	margin-bottom: 0;
+	animation: fadeIn 1s ease-in-out;
+}
+
+p {
+	width: 500px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 15px;
+	animation: fadeIn 2s ease-in-out;
+}
+
+video {
+	position: absolute;
+	border-radius: 10px;
+	height: 400px;
+	z-index: -1;
+}
+
+div {
+	background-color: #1b1b1b;
+	width: 400px;
+	height: 100px;
+	z-index: -1;
+	position: absolute;
+	border-radius: 10px;
+}
+
+.p__h1 {
+	font-family: 'Roboto';
+	margin-bottom: 0;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+button {
+	margin-top: 20px;
+	background-color: #333;
+	color: #eee;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	border: 2px solid #d9d9d9;
+	animation: fadeIn 3s ease-in-out;
+	transition-property: background-color;
+	transition-duration: 500ms;
+  }
+  
+button img {
+	  width: 30px;
+	  height: auto;
+	  margin: 0;
+  }
+  
+button:hover {
+	background-color: #595959;
+  }
