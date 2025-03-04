@@ -6,10 +6,11 @@ const configPath = path.join(__dirname, 'config.json');
 
 const createWindow = async () => {
   const win = new BrowserWindow({
-    width: 900,
+    width: 1000,
     height: 580,
     icon: 'icon.png',
     name: 'Feather',
+    frame: false,
   });
 
   win.setMenu(null);
@@ -26,7 +27,9 @@ const createWindow = async () => {
   }
 };
 
-app.whenReady().then(createWindow);
+app.disableHardwareAcceleration();
+
+app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();

@@ -7,13 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <button class="header__button" id="button--play">Play</button>
-        <button class="header__button" id="button--install">Installation</button>
-        <button class="header__button" id="button--notice" onclick="window.location.href = 'news/index.html';">News</button>
-    </header>
-    <main>
-        <video class="img__main" src="minecraft-aquarium.3840x2160.mp4" autoplay loop muted alt="">
-    </main>
+    <div class="header">
+        <img src="../icon.png">
+        <h1>Feather <span>(0.1v)</span></h1>
+        <div class="header-buttons">
+            <button id="button--theme">
+                <img src="resources/theme.png" alt="">
+            </button>
+            <button>
+                <img src="resources/maximize.png" alt="">
+            </button>
+            <button>
+                <img src="resources/fullscreen.png" alt="">
+            </button>
+            <button>
+                <img src="resources/close.png" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div id="div__profile">
+            <img src="resources/profile.jpg" id="img__profile">
+            <div id="div__profile__info">
+                <p>Hello,</p>
+                <h2>Ekiroe14</h2>
+            </div>
+        </div>
+        <div id="div__menu">
+            <button>
+                <img src="resources/setting.png">
+                <p>Settings</p>
+            </button>
+            <button>
+                <img src="resources/box.png">
+                New box
+            </button>
+        </div>
+        <div style="flex-grow: 1;"></div>
+        <button id="button--play">
+            Play
+            <p>New Box</p>
+        </button>
+    </div>
+    <div class="content">
+    </div>
 </body>
 </html>

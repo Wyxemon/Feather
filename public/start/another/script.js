@@ -5,6 +5,6 @@ document.getElementById('create-btn').addEventListener('click', () => {
         noAcceptMessage.classList.add('show');
     } else {
         noAcceptMessage.classList.remove('show');
-        window.location.href = '../new/index.html'; // Reemplaza con la URL deseada
+        window.location.href = '../thankyou/index.html'; // Reemplaza con la URL deseada
     }
 });
