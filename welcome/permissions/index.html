@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../../icon.png">
+        <h1>Feather <span>(0.1v)</span></h1>
+        <div class="header-buttons">
+            <button onclick="document.body.classList.toggle('light-theme')">
+                <img src="../../src/resources/theme.png" alt="">
+            </button>
+            <button onclick="window.electron.minimizeWindow()">
+                <img src="../../src/resources/maximize.png" alt="">
+            </button>
+            <button onclick="window.electron.fullscreenWindow()">
+                <img src="../../src/resources/fullscreen.png" alt="">
+            </button>
+            <button onclick="window.electron.closeWindow()">
+                <img src="../../src/resources/close.png" alt="">
+            </button>
+        </div>
+    </div>
+    <main>
+        <h1>Accept to create Files</h1>
+        <textarea name="" id="" rows="10" cols="50" readonly>
+By accepting the permissions, you allow this application to create and download files on your system. This includes saving data locally and accessing your file system to store necessary files for the application's functionality. Please ensure you trust this application before proceeding.
+    
+This application will not share your data with third parties without your consent. You can revoke these permissions at any time through the application settings.
+    
+Feather Team 2025
+    
+We don't store any data on our servers, we don't have servers. We use your browser's local storage to store data.
+        </textarea>
+        <div class="accept">
+            <input type="checkbox" id="accept">
+            <label for="accept">I accept the permissions</label>
+        </div>
+        <p id="no-accept">You have to accept to continue</p>
+        <button id="create-btn">
+            <img src="../resources/arrow.png">
+        </button>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

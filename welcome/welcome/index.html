@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../../icon.png">
+        <h1>Feather <span>(0.1v)</span></h1>
+        <div class="header-buttons">
+            <button onclick="document.body.classList.toggle('light-theme')">
+                <img src="../../src/resources/theme.png" alt="">
+            </button>
+            <button onclick="window.electron.minimizeWindow()">
+                <img src="../../src/resources/maximize.png" alt="">
+            </button>
+            <button onclick="window.electron.fullscreenWindow()">
+                <img src="../../src/resources/fullscreen.png" alt="">
+            </button>
+            <button onclick="window.electron.closeWindow()">
+                <img src="../../src/resources/close.png" alt="">
+            </button>
+        </div>
+    </div>
+    <main>
+        <div>
+            <h1>Feather</h1>
+            <p>Welcome to Minecraft Launcher</p>
+            <button onclick="window.location.href='../permissions/index.html'">
+              <img src="../resources/arrow.png" alt="">
+            </button>
+        </div>
+    </main>
+</body>
+</html>

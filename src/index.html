@@ -11,16 +11,16 @@
         <img src="../icon.png">
         <h1>Feather <span>(0.1v)</span></h1>
         <div class="header-buttons">
-            <button id="button--theme">
+            <button onclick="document.body.classList.toggle('light-theme')">
                 <img src="resources/theme.png" alt="">
             </button>
-            <button>
+            <button onclick="window.electron.minimizeWindow()">
                 <img src="resources/maximize.png" alt="">
             </button>
-            <button>
+            <button onclick="window.electron.fullscreenWindow()">
                 <img src="resources/fullscreen.png" alt="">
             </button>
-            <button>
+            <button onclick="window.electron.closeWindow()">
                 <img src="resources/close.png" alt="">
             </button>
         </div>
@@ -51,5 +51,7 @@
     </div>
     <div class="content">
     </div>
+    <script>
+    </script>
 </body>
 </html>

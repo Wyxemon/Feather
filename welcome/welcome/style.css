@@ -17,6 +17,58 @@ body {
     color: #eee;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div button {
+  margin-top: 20px;
+  background-color: #333;
+  color: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #d9d9d9;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div button img {
+  margin-left: 10px;
+}
+
+h1{
+  animation: fadeIn 1s ease-in-out;
+  font-size: 50px;
+  margin-bottom: 0px;
+  -webkit-app-region: no-drag;
+}
+
+p {
+  animation: fadeIn 2s ease-in-out;
+  font-size: 20px;
+  -webkit-app-region: no-drag;
+}
+
 .header {
     grid-area: header;
     background-color: #202020;
@@ -30,6 +82,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding-top: 1px;
+    border-radius: 10px;
 }
 
 .header img {
@@ -76,14 +129,8 @@ body {
 }
 
 
-.sidebar {
-    background-color: #202020;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    animation: fadeIn 1s ease-in-out;
-    grid-area: sidebar;
-}
+
+
 
 .content {
     flex-grow: 1;
@@ -164,46 +211,6 @@ button img {
     margin-right: 10px;
 }
 
-#div__version {
-    margin: 15px;
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    gap: 10px;
-    width: 217px;
-    border-radius: 5px;
-    height: 100%;
-    border: 1px solid #a3a3a3;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#button--play {
-    background-color: #304ce9;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    font-weight: 100;
-}
-
-#button--play p {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-}
-
-#button--play:hover {
-    background-color: #1f3ac9;
-}
-
 span {
     font-weight: 100;
 }
@@ -227,4 +234,14 @@ body.light-theme .header {
 
 body.light-theme .header-buttons button img {
     filter: invert(1);
+}
+
+body.light-theme main div button {
+  border: none;
+  border: 2px solid #202020;
+  background-color: #dddddd;
+}
+
+body.light-theme main div button img {
+  filter: invert(1);
 }

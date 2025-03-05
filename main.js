@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -11,6 +11,9 @@ const createWindow = async () => {
     icon: 'icon.png',
     name: 'Feather',
     frame: false,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
   });
 
   win.setMenu(null);
@@ -18,19 +21,29 @@ const createWindow = async () => {
   const data = await fs.readFile(configPath, 'utf8');
   const config = JSON.parse(data);
 
-  const loadPath = config.firstTime === 1 ? 'public/start/index.html' : 'src/index.html';
+  const loadPath = config.firstTime === 1 ? 'welcome/welcome/index.html' : 'src/index.html';
   win.loadFile(loadPath);
   
   if (config.firstTime === 1) {
     config.firstTime = 0;
     await fs.writeFile(configPath, JSON.stringify(config));
   }
-};
 
-app.disableHardwareAcceleration();
+  ipcMain.on('fullscreen-window', () => {
+    win.setFullScreen(!win.isFullScreen());
+  });
+
+  ipcMain.on('close-window', () => {
+    win.close();
+  });
+
+  ipcMain.on('minimize-window', () => {
+    win.minimize();
+  });
+};
 
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
+  app.quit();
 });
