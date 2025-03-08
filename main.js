@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs').promises;
 const path = require('path');
+const { fork } = require('child_process');
 
 const configPath = path.join(__dirname, 'config.json');
 
@@ -12,7 +13,9 @@ const createWindow = async () => {
     name: 'Feather',
     frame: false,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true
     }
   });
 
@@ -39,6 +42,25 @@ const createWindow = async () => {
 
   ipcMain.on('minimize-window', () => {
     win.minimize();
+  });
+
+  ipcMain.on('start-download', (event, { version, memory }) => {
+    console.log('start-download received with:', version, 'and memory:', memory);
+    const subprocess = fork(path.join(__dirname, 'dowloader.js'), [version, memory]);
+
+    subprocess.on('message', (message) => {
+        console.log('Message from subprocess:', message);
+    });
+
+    subprocess.on('error', (error) => {
+        console.error('Subprocess error:', error);
+    });
+
+    subprocess.on('exit', (code) => {
+        console.log('Subprocess exited with code:', code);
+    });
+
+    console.log('Subprocess started with command:', `node dowloader.js ${version} ${memory}`);
   });
 };
 

@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "electron": "^34.2.0"
+  },
+  "dependencies": {
+    "minecraft-launcher-core": "^3.18.2"
   }
 }

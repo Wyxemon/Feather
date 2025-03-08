@@ -202,10 +202,6 @@ button {
     -webkit-app-region: no-drag;
 }
 
-button:hover {
-    background-color: #304ce9;
-}
-
 button img {
     width: 20px;
     margin-right: 10px;
@@ -244,4 +240,12 @@ body.light-theme main div button {
 
 body.light-theme main div button img {
   filter: invert(1);
+}
+
+#button:hover {
+    background-color: #304ce9;;
+}
+
+body.light-theme #button:hover {
+    background-color: #a0a0a0;
 }

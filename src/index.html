@@ -38,20 +38,59 @@
                 <img src="resources/setting.png">
                 <p>Settings</p>
             </button>
-            <button>
+            <button id="new-box-btn">
                 <img src="resources/box.png">
-                New box
+                New Box
             </button>
         </div>
         <div style="flex-grow: 1;"></div>
         <button id="button--play">
             Play
-            <p>New Box</p>
+            <p>No version</p>
         </button>
     </div>
     <div class="content">
     </div>
-    <script>
-    </script>
+    <div id="new-box-modal" class="modal">
+        <div class="modal-content">
+            <h2>Download Minecraft</h2>
+            <button class="close-btn">
+                <img src="resources/close.png">
+            </button>
+            <select class="dropdown">
+                <option>1.20.4</option>
+                <option>1.20.2</option>
+                <option>1.20.1</option>
+                <option>1.20</option>
+                <option>1.19.4</option>
+                <option>1.19.3</option>
+                <option>1.19.2</option>
+                <option>1.19.1</option>
+                <option>1.19</option>
+                <option>1.18.2</option>
+                <option>1.18.1</option>
+                <option>1.17.1</option>
+                <option>1.16.5</option>
+                <option>1.16.4</option>
+                <option>1.16.3</option>
+                <option>1.16.1</option>
+                <option>1.15.1</option>
+                <option>1.12.2</option>
+                <option>1.12.1</option>
+                <option>1.12</option>
+            </select>
+            <select class="dropdown">
+                <option>4G</option>
+                <option>6G</option>
+                <option>8G</option>
+                <option>10G</option>
+                <option>12G</option>
+                <option>14G</option>
+                <option>16G</option>
+            </select>
+            <button class="download-button">Dowload</button>
+        </div>
+    </div>
+    <script src="menu.js"></script>
 </body>
 </html>
