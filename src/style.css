@@ -332,3 +332,40 @@ body.light-theme .modal-content {
 body.light-theme .modal-content button img {
     filter: invert(1);
 }
+
+body.light-theme #div__box div img {
+    filter: invert(1);
+}
+
+#div__box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-right: 18px;
+    border-top: 1px solid #a3a3a3;
+    padding-top: 10px;
+}
+
+#div__box div img {
+    width: 30px;
+    height: 30px;
+}
+
+#div__box div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#div__box div p {
+    font-family: "Atkinson Hyperlegible Next", system-ui, Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+#div__box__install:hover {
+    background-color: #f16436;
+    border-radius: 5px;
+    cursor: pointer;
+}
