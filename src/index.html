@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feather</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <img src="../icon.png">
-        <h1>Feather <span>(0.1v)</span></h1>
-        <div class="header-buttons">
-            <button onclick="document.body.classList.toggle('light-theme')">
-                <img src="resources/theme.png" alt="">
-            </button>
-            <button onclick="window.electron.minimizeWindow()">
-                <img src="resources/maximize.png" alt="">
-            </button>
-            <button onclick="window.electron.fullscreenWindow()">
-                <img src="resources/fullscreen.png" alt="">
-            </button>
-            <button onclick="window.electron.closeWindow()">
-                <img src="resources/close.png" alt="">
-            </button>
-        </div>
-    </div>
-    <div class="sidebar">
-        <div id="div__profile">
-            <img src="resources/profile.jpg" id="img__profile">
-            <div id="div__profile__info">
-                <p>Hello,</p>
-                <h2>Ekiroe14</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="../icon.png">
+            <h1>Feather <span>(0.1v)</span></h1>
+            <div class="header-buttons">
+                <button onclick="document.body.classList.toggle('light-theme')">
+                    <img src="resources/theme.png" alt="">
+                </button>
+                <button onclick="window.electron.minimizeWindow()">
+                    <img src="resources/maximize.png" alt="">
+                </button>
+                <button onclick="window.electron.fullscreenWindow()">
+                    <img src="resources/fullscreen.png" alt="">
+                </button>
+                <button onclick="window.electron.closeWindow()">
+                    <img src="resources/close.png" alt="">
+                </button>
             </div>
         </div>
-        <div id="div__menu">
-            <button>
-                <img src="resources/setting.png">
-                <p>Settings</p>
-            </button>
-            <button id="new-box-btn" onclick="newBox()">
-                <img src="resources/box.png">
-                New Box
-            </button>
-        </div>
-        <div style="flex-grow: 1;">
-            <div id="div__box">
+        <div class="sidebar">
+            <div id="div__profile">
+                <img src="resources/profile.jpg" id="img__profile">
+                <div id="div__profile__info">
+                    <p>Hello,</p>
+                    <h2>Ekiroe14</h2>
+                </div>
             </div>
+            <div id="div__menu">
+                <button>
+                    <img src="resources/setting.png">
+                    <p>Settings</p>
+                </button>
+                <button id="new-box-btn">
+                    <img src="resources/box.png">
+                    New Box
+                </button>
+            </div>
+            <div style="flex-grow: 1;">
+                <div id="div__box">
+                </div>
+            </div>
+            <button id="button--play">
+                Play
+                <p>No Box / 8 GB</p>
+            </button>
         </div>
-        <button id="button--play">
-            Play
-            <p>No Box / 8 GB</p>
-        </button>
-    </div>
-    <div class="content">
-    </div>
-    <div id="new-box-modal" class="modal">
-        <div class="modal-content">
-            <h2>Download Minecraft</h2>
-            <button class="close-btn">
+        <div class="content">
+            <div id="div__loading">
+                <span class="loader"></span>
+            </div>
+            <iframe id="news" src="https://feather-server.vercel.app/" frameborder="0"></iframe>
+        </div>
+        <div id="new-box-modal" class="modal">
+            <div class="modal-content">
+                <h2>Download Minecraft</h2>
+                <button class="close-btn">
                 <img src="resources/close.png">
             </button>
             <select class="dropdown">
