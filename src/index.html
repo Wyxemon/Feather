@@ -11,7 +11,7 @@
             <img src="../icon.png">
             <h1>Feather <span>(0.1v)</span></h1>
             <div class="header-buttons">
-                <button onclick="document.body.classList.toggle('light-theme')">
+                <button id="theme-toggle-button">
                     <img src="resources/theme.png" alt="">
                 </button>
                 <button onclick="window.electron.minimizeWindow()">
@@ -101,9 +101,9 @@
                 <label>Username</label>
                 <input type="text" id="input--username" placeholder="Username">
                 <label>Theme</label>
-                <select>
-                    <option>Dark</option>
-                    <option>Light</option>
+                <select id="theme-select">
+                    <option value="dark-theme">Dark</option>
+                    <option value="light-theme">Light</option>
                 </select>
             </div>
         </div>
