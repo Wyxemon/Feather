@@ -423,13 +423,6 @@ body.light-theme #div__box div img {
     box-sizing: border-box;
 }
 
-body.light-theme #new-setting-modal input,
-body.light-theme #new-setting-modal select {
-    background-color: #fff;
-    color: #202020;
-    border: 1px solid #ccc;
-}
-
 label {
     margin-top: 10px;
 }
