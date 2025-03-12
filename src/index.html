@@ -34,33 +34,26 @@
                 </div>
             </div>
             <div id="div__menu">
-                <button>
+                <button onclick="document.getElementById('new-setting-modal').style.display='flex'">
                     <img src="resources/setting.png">
                     <p>Settings</p>
                 </button>
-                <button id="new-box-btn">
-                    <img src="resources/box.png">
-                    New Box
-                </button>
             </div>
             <div style="flex-grow: 1;">
-                <div id="div__box">
-                </div>
             </div>
             <button id="button--play">
                 Play
-                <p>No Box / 8 GB</p>
             </button>
         </div>
         <div class="content">
-            <div id="div__loading">
+            <div class="div__loading" id="div__loading">
                 <span class="loader"></span>
             </div>
             <iframe id="news" src="https://feather-server.vercel.app/" frameborder="0"></iframe>
         </div>
         <div id="new-box-modal" class="modal">
             <div class="modal-content">
-                <h2>Download Minecraft</h2>
+                <h2 id="modal--title">Play</h2>
                 <button class="close-btn">
                 <img src="resources/close.png">
             </button>
@@ -95,9 +88,25 @@
                 <option>14G</option>
                 <option>16G</option>
             </select>
-            <button class="download-button" onclick="newBox()">Download</button>
+            <button class="download-button" onclick="newBox()">Play</button>
         </div>
-    </div>
+        </div>
+
+        <div id="new-setting-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="modal--title">Settings</h2>
+                <button class="close-btn" onclick="document.getElementById('new-setting-modal').style.display='none'">
+                    <img src="resources/close.png">
+                </button>
+                <label>Username</label>
+                <input type="text" placeholder="Username">
+                <label>Theme</label>
+                <select>
+                    <option>Dark</option>
+                    <option>Light</option>
+                </select>
+            </div>
+        </div>
     <script src="menu.js"></script>
 </body>
 </html>

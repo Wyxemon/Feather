@@ -387,7 +387,7 @@ body.light-theme #div__box div img {
 }
 } 
 
-#div__loading {
+.div__loading {
     background-color: #202020;
     height: 30px;
     width: 30px;
@@ -408,4 +408,42 @@ body.light-theme #div__box div img {
     height: 100%;
     border-top-left-radius: 5px;
     z-index: 1;
+}
+
+#new-setting-modal input,
+#new-setting-modal select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 2px;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body.light-theme #new-setting-modal input,
+body.light-theme #new-setting-modal select {
+    background-color: #fff;
+    color: #202020;
+    border: 1px solid #ccc;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#new-setting-modal {
+    display: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    top: 31px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
