@@ -44,9 +44,9 @@ const createWindow = async () => {
     win.minimize();
   });
 
-  ipcMain.on('start-download', (event, { version, memory }) => {
-    console.log('start-download received with:', version, 'and memory:', memory);
-    const subprocess = fork(path.join(__dirname, 'dowloader.js'), [version, memory]);
+  ipcMain.on('start-download', (event, { version, memory, user }) => {
+    console.log('start-download received with:', version, 'memory:', memory, 'user:', user);
+    const subprocess = fork(path.join(__dirname, 'dowloader.js'), [version, memory, user]);
 
     subprocess.on('message', (message) => {
         console.log('Message from subprocess:', message);
@@ -60,7 +60,7 @@ const createWindow = async () => {
         console.log('Subprocess exited with code:', code);
     });
 
-    console.log('Subprocess started with command:', `node dowloader.js ${version} ${memory}`);
+    console.log('Subprocess started with command:', `node dowloader.js ${version} ${memory} ${user}`);
   });
 };
 

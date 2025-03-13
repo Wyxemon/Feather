@@ -27,7 +27,7 @@
         </div>
         <div class="sidebar">
             <div id="div__profile">
-                <img src="resources/profile.jpg" id="img__profile">
+                <img src="resources/profile.jpg" id="img__profile" class="user__icon">
                 <div id="div__profile__info">
                     <p>Hello,</p>
                     <h2 id="name">Ekiroe14</h2>
@@ -92,21 +92,35 @@
         </div>
         </div>
 
-        <div id="new-setting-modal" class="modal" style="display: none;">
+        <div id="new-setting-modal" class="modal" style="display: none;" >
             <div class="modal-content">
                 <h2 id="modal--title">Settings</h2>
-                <button class="close-btn" onclick="document.getElementById('new-setting-modal').style.display='none'">
+                <button class="close-btn" onclick="document.getElementById('new-setting-modal').style.display='none';document.getElementById('info-modal').style.display='none'">
                     <img src="resources/close.png">
                 </button>
                 <label>Username</label>
                 <input type="text" id="input--username" placeholder="Username">
-                <label>Theme</label>
-                <select id="theme-select">
-                    <option value="dark-theme">Dark</option>
-                    <option value="light-theme">Light</option>
-                </select>
+                <label>Profile image</label>
+                <label for="file-upload" class="custom-file-upload">
+                    Choose File
+                </label>
+                <input id="file-upload" type="file">
+                <button id="button__info" onclick="info()">
+                    <img src="resources/info.png">
+                </button>
             </div>
         </div>
+
+        <div id="info-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Information</h2>
+                <p>Name: Feather</p>
+                <p>Version: 0.1v</p>
+                <p>Company: Wyxemon Studios</p>
+                <p>Server: https://feather-server.vercel.app/</p>
+            </div>
+        </div>
+
     <script src="menu.js"></script>
     <script src="settings.js"></script>
 </body>

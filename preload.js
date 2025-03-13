@@ -4,5 +4,5 @@ contextBridge.exposeInMainWorld('electron', {
   fullscreenWindow: () => ipcRenderer.send('fullscreen-window'),
   closeWindow: () => ipcRenderer.send('close-window'),
   minimizeWindow: () => ipcRenderer.send('minimize-window'),
-  startDownload: (version, memory) => ipcRenderer.send('start-download', { version, memory })
+  startDownload: (data) => ipcRenderer.send('start-download', data)
 });

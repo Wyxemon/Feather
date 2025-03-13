@@ -3,14 +3,16 @@ const launcher = new Client();
 
 const version = process.argv[2] || "1.12.2";
 const maxMemory = process.argv[3] || "6G";
+const user = process.argv[4] || "Steve";
 const minMemory = "4G";
 
 console.log('Subprocess started with version:', version);
 console.log('Max memory:', maxMemory);
 console.log('Min memory:', minMemory);
+console.log('Username:', user);
 
 let opts = {
-    authorization: Authenticator.getAuth("wyxemon"),
+    authorization: Authenticator.getAuth(user),
     root: "./minecraft",
     version: {
         number: version,
