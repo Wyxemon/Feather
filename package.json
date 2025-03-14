@@ -1,16 +1,28 @@
 {
   "name": "feather",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "electron ."
   },
-  "author": "",
+  "build": {
+    "appId": "Feather",
+    "productName": "Feather",
+    "win": {
+      "target": "nsis",
+      "icon": "build-icon.png"
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "author": "Wyxemon",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^34.2.0"
+    "electron": "^34.2.0",
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
     "minecraft-launcher-core": "^3.18.2"
