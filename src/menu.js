@@ -34,5 +34,12 @@ playModalButton.onclick = function() {
     // Esconder el div de carga después de 15 segundos
     setTimeout(() => {
         loadingDiv.style.display = 'none';
-    }, 15000);
+    }, 20000);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const valor = localStorage.getItem('username'); // Obtén el valor del localStorage
+    if (valor) {
+        document.getElementById('name').textContent = valor;
+    }
+});
