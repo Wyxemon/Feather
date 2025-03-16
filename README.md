@@ -1,6 +1,6 @@
 # Feather
 The most secure Minecraft Launcher. Open Source Minecraft Launcher built in JavaScript (Electron).
-![Alt text](icon.png)
+![Alt text](welcome/resources/image.png)
 ## Download
 - [Download for Mac OS](#)
 - [Download for Windows](#)
