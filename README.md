@@ -9,3 +9,6 @@ To get started, follow these steps:
 3. Install dependencies by running:
    ```bash
    npm install
+4. Run the proyect:
+   ```bash
+   npm run dev
