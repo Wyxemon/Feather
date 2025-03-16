@@ -19,3 +19,9 @@ To get started, follow these steps:
 4. Run the proyect:
    ```bash
    npm run dev
+
+## How to build
+
+1. You can use the follow command to build.
+   ```bash
+   npm install
