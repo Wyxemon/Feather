@@ -21,7 +21,7 @@ To get started, follow these steps:
    npm run dev
 
 ## How to build
-
+Using electron-packager npm i electron-packager https://www.npmjs.com/package/electron-packager
 1. Build for Windows.
    ```bash
    npx electron-packager . Feather --platform=win32 --arch=x64 --out=build --icon=icon.png
