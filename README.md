@@ -13,7 +13,7 @@ Choose your operating system to download Feather:
 
 ---
 
-## 🚀 How to Run
+## ▶️ How to Run
 Follow these steps to set up and run Feather on your local machine:
 
 1. Clone the repository:
