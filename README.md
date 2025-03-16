@@ -2,7 +2,7 @@
 
 Feather is an open-source Minecraft Launcher built with JavaScript (Electron).
 
-![Feather Launcher](welcome/resources/image.png)
+
 
 ## 📥 Download
 Choose your operating system to download Feather:
