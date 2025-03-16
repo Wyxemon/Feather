@@ -22,6 +22,12 @@ To get started, follow these steps:
 
 ## How to build
 
-1. You can use the follow command to build.
+1. Build for Windows.
    ```bash
-   npm install
+   npx electron-packager . Feather --platform=win32 --arch=x64 --out=build --icon=icon.png
+2. Build for MacOs.
+   ```bash
+   npx electron-packager . Feather --platform=darwin --arch=x64 --out=build --icon=icon.png
+3. Build for Linux.
+   ```bash
+   npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=icon.png
