@@ -44,17 +44,17 @@ npm i -g electron-packager
 
 Then, use the following commands to build for your desired platform:
 
-### 🏁 Windows
+### Windows
 ```bash
 npx electron-packager . Feather --platform=win32 --arch=x64 --out=build --icon=icon.png
 ```
 
-### 🍏 macOS
+### macOS
 ```bash
 npx electron-packager . Feather --platform=darwin --arch=x64 --out=build --icon=icon.png
 ```
 
-### 🐧 Linux
+### Linux
 ```bash
 npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=icon.png
 ```
@@ -63,10 +63,3 @@ npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=i
 
 ## 📜 License
 Feather is open-source and distributed under the [MIT License](LICENSE).
-
----
-
-## 🌍 Contribute
-We welcome contributions! Feel free to submit issues or pull requests.
-
-🔗 [GitHub Repository](https://github.com/your-repo/Feather)
