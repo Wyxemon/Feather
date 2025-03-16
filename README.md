@@ -1,33 +1,72 @@
-# Feather
-The most secure Minecraft Launcher. Open Source Minecraft Launcher built in JavaScript (Electron).
+# Feather - The Most Secure Minecraft Launcher
 
-![Alt text](welcome/resources/image.png)
+Feather is an open-source Minecraft Launcher built with JavaScript (Electron). Designed with security in mind, it provides a seamless and safe experience for launching Minecraft.
 
-## Download
-- [Download for Mac OS](#)
+![Feather Launcher](welcome/resources/image.png)
+
+## 📥 Download
+Choose your operating system to download Feather:
+
+- [Download for macOS](#)
 - [Download for Windows](#)
 - [Download for Linux](#)
 
-## How to run
-To get started, follow these steps:
+---
 
-1. Clone the repository to your local machine.
-2. Navigate to the project folder.
-3. Install dependencies by running:
+## 🚀 How to Run
+Follow these steps to set up and run Feather on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/Feather.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Feather
+   ```
+3. Install dependencies:
    ```bash
    npm install
-4. Run the proyect:
+   ```
+4. Run the project:
    ```bash
    npm run dev
+   ```
 
-## How to build
-Using electron-packager npm i electron-packager https://www.npmjs.com/package/electron-packager
-1. Build for Windows.
-   ```bash
-   npx electron-packager . Feather --platform=win32 --arch=x64 --out=build --icon=icon.png
-2. Build for MacOs.
-   ```bash
-   npx electron-packager . Feather --platform=darwin --arch=x64 --out=build --icon=icon.png
-3. Build for Linux.
-   ```bash
-   npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=icon.png
+---
+
+## 🛠️ How to Build
+Feather uses [`electron-packager`](https://www.npmjs.com/package/electron-packager) to package the application. Install it globally if you haven't:
+
+```bash
+npm i -g electron-packager
+```
+
+Then, use the following commands to build for your desired platform:
+
+### 🏁 Windows
+```bash
+npx electron-packager . Feather --platform=win32 --arch=x64 --out=build --icon=icon.png
+```
+
+### 🍏 macOS
+```bash
+npx electron-packager . Feather --platform=darwin --arch=x64 --out=build --icon=icon.png
+```
+
+### 🐧 Linux
+```bash
+npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=icon.png
+```
+
+---
+
+## 📜 License
+Feather is open-source and distributed under the [MIT License](LICENSE).
+
+---
+
+## 🌍 Contribute
+We welcome contributions! Feel free to submit issues or pull requests.
+
+🔗 [GitHub Repository](https://github.com/your-repo/Feather)
