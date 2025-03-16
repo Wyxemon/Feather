@@ -2,7 +2,9 @@
 The most secure Minecraft Launcher. Open Source Minecraft Launcher built in JavaScript (Electron).
 
 ## Dowload
-
+Mac OS ->
+Window ->
+Linux ->
 
 ## How to run
 To get started, follow these steps:
