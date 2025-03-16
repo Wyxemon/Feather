@@ -1,6 +1,6 @@
-# Feather - The Most Secure Minecraft Launcher
+# Feather
 
-Feather is an open-source Minecraft Launcher built with JavaScript (Electron). Designed with security in mind, it provides a seamless and safe experience for launching Minecraft.
+Feather is an open-source Minecraft Launcher built with JavaScript (Electron).
 
 ![Feather Launcher](welcome/resources/image.png)
 
