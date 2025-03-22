@@ -62,4 +62,4 @@ npx electron-packager . Feather --platform=linux --arch=x64 --out=build --icon=i
 ---
 
 ## 📜 License
-Feather is open-source and distributed under the [MIT License](LICENSE).
+Feather is open source and you can do whatever you want.
