@@ -7,9 +7,9 @@ Feather is an open-source Minecraft Launcher built with JavaScript (Electron).
 ## ⬇️ Download
 Choose your operating system to download Feather:
 
-- [Download for macOS](#)
-- [Download for Windows](#)
-- [Download for Linux](#)
+- [Download for macOS](https://github.com/Wyxemon/Feather/releases/tag/1.0v)
+- [Download for Windows](https://github.com/Wyxemon/Feather/releases/tag/1.0v)
+- [Download for Linux](https://github.com/Wyxemon/Feather/releases/tag/1.0v)
 
 ---
 
